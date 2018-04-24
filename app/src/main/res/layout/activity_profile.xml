@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.arvind.hackathon.Profile" >
+
+    <include layout="@layout/navigation_actionbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp" >
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/usernameWrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView4"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="75dp">
+
+            <EditText
+                android:id="@+id/editText1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Name"
+                android:inputType="textPersonName" />
+
+            </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/numWrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/usernameWrapper"
+            android:layout_below="@+id/usernameWrapper"
+            android:layout_alignStart="@+id/usernameWrapper">
+
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Phone number"
+                android:inputType="phone"
+                android:maxLength="10" />
+
+            </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/secNumWrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/numWrapper"
+            android:layout_below="@+id/radioGroup"
+            android:layout_alignStart="@+id/numWrapper">
+
+            <EditText
+                android:id="@+id/editText4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Aadhar Number"
+                android:inputType="text"
+                android:visibility="visible" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="Save"
+            android:layout_marginTop="60dp"
+            android:layout_below="@+id/secNumWrapper"
+            android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/usernameWrapper"
+        android:layout_alignLeft="@+id/usernameWrapper"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/usernameWrapper"
+        android:layout_alignStart="@+id/usernameWrapper"
+        android:gravity="center"
+        android:text="User Profile"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textColor="#0008ff" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/radioGroup"
+        android:weightSum="1"
+        android:layout_below="@+id/numWrapper"
+        android:layout_alignLeft="@+id/numWrapper"
+        android:layout_alignStart="@+id/numWrapper">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="public"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/radioButton1"
+            android:layout_weight="0.20"
+            android:checked="true" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="government"
+            android:layout_weight="0.80"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/radioButton2"
+            android:checked="false" />
+
+    </RadioGroup>
+
+    </RelativeLayout>
+
+</LinearLayout>

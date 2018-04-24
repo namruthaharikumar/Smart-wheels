@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "532262930973",
+    "firebase_url": "https://hack-dbebe.firebaseio.com",
+    "project_id": "hack-dbebe",
+    "storage_bucket": "hack-dbebe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:532262930973:android:a63668a007e1d760",
+        "android_client_info": {
+          "package_name": "com.example.arvind.hackathon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "532262930973-mn6ip5ts01sa1h86f7aft2f3qu63fgq0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-5YGFB4S5QanBXGscXscjRYcaseSQuq4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

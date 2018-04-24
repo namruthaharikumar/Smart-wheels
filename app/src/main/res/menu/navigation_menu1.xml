@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/nav_account"
+        android:icon="@mipmap/ic_person_pin_black_24dp"
+        android:title="My Profile" />
+
+    <item android:id="@+id/nav_bus"
+        android:icon="@mipmap/ic_directions_bus_black_24dp"
+        android:title="Start Service" />
+
+    <item android:id="@+id/nav_aadhar"
+        android:icon="@mipmap/ic_credit_card_black_24dp"
+        android:title="Aadhar Payment" />
+
+    <item android:id="@+id/nav_edit"
+        android:icon="@mipmap/ic_mode_edit_black_24dp"
+        android:title="Bus Details" />
+
+    <item android:id="@+id/nav_logout"
+        android:icon="@mipmap/ic_exit_to_app_black_24dp"
+        android:title="Log Out" />
+
+
+</menu>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.arvind.hackathon.LogIn" >
+
+    <include layout="@layout/navigation_actionbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/usernameWrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_below="@+id/textView4"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="75dp">
+
+            <EditText
+                android:id="@+id/editText1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="textPersonName" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/passwordWrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/usernameWrapper"
+            android:layout_alignStart="@+id/usernameWrapper"
+            android:layout_below="@+id/usernameWrapper">
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="180dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/passwordWrapper"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="55dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="LogIn" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/button2"
+            android:layout_alignLeft="@+id/button2"
+            android:layout_alignRight="@+id/button2"
+            android:layout_alignStart="@+id/button2"
+            android:layout_below="@+id/button2"
+            android:layout_marginTop="30dp"
+            android:text="Not Registered? Click here"
+            android:textAlignment="center"
+            android:textColor="#0008ff" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView"
+            android:layout_alignLeft="@+id/textView"
+            android:layout_alignRight="@+id/textView"
+            android:layout_alignStart="@+id/textView"
+            android:layout_below="@+id/textView"
+            android:layout_marginTop="30dp"
+            android:text="Forgot Password?"
+            android:textAlignment="center"
+            android:textColor="#0008ff" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/usernameWrapper"
+            android:layout_alignLeft="@+id/usernameWrapper"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/usernameWrapper"
+            android:layout_alignStart="@+id/usernameWrapper"
+            android:gravity="center"
+            android:text="LogIn Here"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textColor="#0008ff" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>
